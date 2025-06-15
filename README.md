@@ -58,9 +58,10 @@ google-map-place-finder/
 ````bash
 git clone --recurse-submodules https://github.com/zaharscript/google-map-place-finder.git
 cd google-map-place-finder
+```
 
 2. Backend Setup (Flask)
-
+```bash
 cd backend
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
@@ -68,6 +69,7 @@ pip install -r requirements.txt
 
 # Run server
 python app.py
+```
 
 Flask will run on: http://127.0.0.1:5000
 
@@ -76,15 +78,17 @@ Flask will run on: http://127.0.0.1:5000
 ```bash
 cd ../frontend
 npm install
+```
 
 Create .env file inside frontend/ folder:
 ```env
 REACT_APP_API_BASE_URL=http://127.0.0.1:5000
+```
 
 Then run:
 ```bash
 npm run dev
-
+```
 
 React app will be served at: http://localhost:5173
 
@@ -117,7 +121,7 @@ You may optionally enhance accuracy by falling back to Google Places API when No
 
 
 📸 Screenshots
-Search Interface	Results Table
+![Place Finder Result](assets/images/place-finder-result.png)
 
 🧑‍💻 Author
 Zahar Mokhtar
