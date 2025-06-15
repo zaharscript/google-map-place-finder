@@ -55,12 +55,14 @@ google-map-place-finder/
 
 ### 1. Clone the Main Repository
 
-````bash
+```bash
 git clone --recurse-submodules https://github.com/zaharscript/google-map-place-finder.git
 cd google-map-place-finder
+
 ```
 
 2. Backend Setup (Flask)
+
 ```bash
 cd backend
 python -m venv venv
@@ -73,19 +75,21 @@ python app.py
 
 Flask will run on: http://127.0.0.1:5000
 
-
 3. Frontend Setup (React + Vite)
+
 ```bash
 cd ../frontend
 npm install
 ```
 
 Create .env file inside frontend/ folder:
+
 ```env
 REACT_APP_API_BASE_URL=http://127.0.0.1:5000
 ```
 
 Then run:
+
 ```bash
 npm run dev
 ```
@@ -119,7 +123,6 @@ These files can be downloaded from the frontend directly.
 🔐 Optional Google API Integration (Not Enabled)
 You may optionally enhance accuracy by falling back to Google Places API when Nominatim returns no results. Contact Google Cloud for API key & pricing.
 
-
 📸 Screenshots
 ![Place Finder Result](assets/images/place-finder-result.png)
 
@@ -128,10 +131,5 @@ Zahar Mokhtar
 GitHub: @zaharscript
 Location: Malaysia 🇲🇾
 
-
 📄 License
 This project is open source and available under the MIT License.
-
-
-
-````
